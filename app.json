@@ -1,0 +1,12 @@
+{
+  "name": "WebDevToolkit-Native",
+  "displayName": "WebDevToolkit-Native",
+  "expo": {
+    "name": "WebDevToolkit-Native",
+    "slug": "WebDevToolkit-Native",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
