@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+@media screen and (max-width: 700px) {
+div#lp-resource-component-container{
+  display: block;
+  padding: initial;
+}
+
+section.LoginContainer,
+main {
+    width: initial;
+    height: 100%;
+    display: inline-block;
+    position: initial;
+    margin: 0;
+    padding: 0;
+}
+
+div.LoginForm{
+    display: inline-grid;
+    height: 70vh;
+}
+
+form.RegistrationForm{
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 1.5em;
+    text-align: left;
+    color: white;
+}
+}
+
+*{
+    height:100%;
+}
+
+
+
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
+}
+
+.LoginForm{
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    margin: 0;
+    width: 100%;
+}
+
+.RegistrationForm{
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 1.5em;
+    text-align: left;
+    color: white;
+
+}
+
+#loginParagraph{
+    padding:2%;
+}
+
+
+.loginFormHeader{
+    width: 100%;
+    padding:5px;
+color: white;
+font-size: 1.5em;
+background-image: linear-gradient(rgb(255, 188, 111), #fd735d);
+}
+
+
+.newestPost{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 100px;
+}

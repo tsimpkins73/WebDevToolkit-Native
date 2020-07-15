@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "Web-Dev-Toolkit-Client",
+    "public": true,
+    "builds": [
+      { "src": "package.json", "use": "@now/static-build", 
+    "config": {"distDir":"build"} }
+    ],
+    "routes": [
+      { "src": "/manifest.json", "dest": "/manifest.json" },
+      { "src": "^/static/(.*)", "dest": "/static/$1" },
+      { "src": "^/images/(.*)", "dest": "/images/$1" },
+      { "src": ".*", "dest": "/index.html" }
+    ]
+  }

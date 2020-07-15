@@ -1,0 +1,71 @@
+#articleImage {
+    width: 20%;
+    padding: 10px;
+    height: 100px;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+#mainContentContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    display: inline-block;
+}
+
+#article-full-container {
+    width: 60%;
+    height: auto;
+    left: 0;
+    margin: 0;
+    background: white;
+}
+
+#article {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    vertical-align: middle;
+    display: inline-flex;
+}
+
+#article-Full {
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    background: white;
+}
+
+#lpArticle {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#articleText {
+    width: 70%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+
+div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
+}
+
+#resourceButtons{
+    padding: 5%;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    height: auto;
+}

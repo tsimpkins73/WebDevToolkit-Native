@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+@media screen and (max-width: 700px) {
+div#lp-resource-component-container{
+  display: block;
+  padding: initial;
+}
+
+main {
+  width: initial;
+  height: 100%;
+  display: inline-block;
+  position: initial;
+}
+
+section.LandingContainer{
+  position: absolute;
+  margin-left: auto;
+  width: initial;
+  height: auto;
+  display: inline-block;
+  position: initial;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div.loginFormHeader{
+    display: block;
+    position: inherit;
+    padding: 1px;
+    padding-top: 0;
+  }
+
+}
+
+
+.LandingContainer{
+  position: absolute;
+  margin-left: auto;
+  height: auto;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0;
+  width: 100%;
+}
+
+#lp-resourceImage{
+  width: auto;
+  padding: 10px;
+  height: 100px;
+  display: inline-block;
+  }
+
+
+  #lp-resource-Full{
+    grid-template-rows: 0fr 0fr 0fr;
+    display: inline-grid;
+    margin: 0 4%;
+}
+
+body{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginContainer{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    position: initial;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+#lpArticle {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#lp-resource-component-container{
+    width: auto;
+    height: auto;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1em;
+    padding: 3%;
+  }
