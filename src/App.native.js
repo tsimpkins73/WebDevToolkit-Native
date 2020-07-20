@@ -5,6 +5,7 @@ import LoginForm from './LoginForm.js'
 import SignUpForm from './SignUpForm.js'
 import Dashboard from './Dashboard.js'
 import { API_BASE_URL } from './config'
+import { Text, ScrollView, StyleSheet } from 'react-native';
 require('dotenv').config();
 
 export default class App extends React.Component {
@@ -90,14 +91,14 @@ export default class App extends React.Component {
   render() {
     let types = this.state.types;
     return (
-      <main className='App'>
+      <ScrollView className='App'>
         <BrowserRouter>
           <Route exact path={'/'} render={(props) => <LandingPage {...props} resources={this.state.resources} types={types} handleFavoriteButton={this.handleFavoriteButton} clearUser={this.clearUser} currentresource={this.state.currentArticle} />} />
           <Route path={'/login'} render={(props) => <LoginForm onLoginSuccess={this.onLoginSuccess} {...props} />} />
           <Route path={'/sign-up'} component={SignUpForm} />
           <Route path={'/dashboard'} render={(props) => <Dashboard {...props} handleArticleButton={this.handleArticleButton} users={this.state.users} resources={this.state.resources} types={types} searchterm={this.state.searchterm} currentUser={this.state.currentUser} types={this.state.types} handleSearchForm={this.handleSearchForm} handleFavoriteButton={this.handleFavoriteButton} clearUser={this.clearUser} currentresource={this.state.currentArticle} />} />
         </BrowserRouter>
-      </main>
+      </ScrollView>
     );
   }
 }

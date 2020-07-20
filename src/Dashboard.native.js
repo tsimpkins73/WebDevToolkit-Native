@@ -24,9 +24,9 @@ export default class Dashboard extends React.Component {
 
 
     render() {
-        return (<section id="dashboardContainer">
-            <section id="Header"><h1 id="dashboardHeaderText">Web Dev Toolkit</h1>
-            <section id="navbar"><Link id='navLink' onClick={this.handleLogoutClick} to='/'>
+        return (<View id="dashboardContainer">
+            <View id="Header"><h1 id="dashboardHeaderText">Web Dev Toolkit</h1>
+            <View id="navbar"><Link id='navLink' onClick={this.handleLogoutClick} to='/'>
                 Logout
         </Link>
                 <Link id='navLink' to='/dashboard'>
@@ -37,9 +37,9 @@ export default class Dashboard extends React.Component {
                     <button className="searchButton" type="submit">Search</button>
                 </form>
                 <Link id='navLink' to='/dashboard/favorites'>Favorites</ Link>
-                <Link id='navLink' to='/dashboard/random'>Random</ Link></section>
-            </section>
-            <section id="mainContentContainer">
+                <Link id='navLink' to='/dashboard/random'>Random</ Link></View>
+            </View>
+            <View id="mainContentContainer">
                 <Route exact path={'/dashboard'} render={(props) => { return <ResourceTypeList resources={this.props.resources} types={this.props.types} searchTerm={this.props.searchterm} /> }} />
                 <Route path={'/dashboard/resource/:type'} render={(props) => {
                     let types = this.props.types;
@@ -66,8 +66,8 @@ export default class Dashboard extends React.Component {
                     console.log(randomResources)
                     return <ResourceTypePage randomResources={randomResources} resourceType={resourceType} handleFavoriteButton={this.props.handleFavoriteButton} />
                 }} />
-            </section>
-        </section>
+            </View>
+        </View>
         );
     }
 }
